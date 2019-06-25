@@ -1,3 +1,9 @@
-# https://issues.liferay.com/issues/?filter=46328
+# [ExM | Project Kanban] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46328
 
-issue in structure(1027) AND issuetype in (Epic, Story, Task, Spike) ORDER BY Rank ASC
+issue in structure(1027) 
+AND issuetype in (Story, Task, Spike) 
+AND (
+    "Epic Link" is EMPTY 
+    OR ("Epic Link" is not EMPTY AND issueFunction in linkedIssuesOf("filter=46436", "is epic of"))
+) 
+ORDER BY Rank ASC
