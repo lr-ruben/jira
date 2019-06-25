@@ -1,0 +1,7 @@
+(issuetype = Bug OR issuetype = "Regression Bug") 
+AND (component is EMPTY OR component != "Security Vulnerability") 
+AND "Fix Priority" is not EMPTY 
+AND affectedVersion >= "7.1.0 M1" 
+AND created >= 2018-07-01 
+AND issueFunction in linkedIssuesOf("project = LPP") 
+ORDER BY key ASC
