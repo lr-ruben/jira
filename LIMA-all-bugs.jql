@@ -3,7 +3,7 @@ AND filter = "Components | LPS-CDM"
 AND component != "Security Vulnerability" 
 AND status != Open 
 AND "Fix Priority" is not EMPTY 
-AND affectedVersion >= "7.1.0 M1" AND affectedVersion = master 
+AND affectedVersion >= "7.2.0 M1"  
 AND (
     (labels not in (6.2.x-only, ee-7.0.x-only, ee-7.1.x-only, ee-ts, ee-7.2.x-only) 
     OR labels is EMPTY 
