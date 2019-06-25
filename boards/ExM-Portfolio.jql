@@ -1,0 +1,1 @@
+issue in structure(1027) AND issuetype in (Epic, Spike) ORDER BY Rank ASC
