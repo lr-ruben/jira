@@ -1,0 +1,4 @@
+filter = 45900 
+AND status = Resolved 
+AND status changed to Resolved before -7d
+ORDER BY updated ASC
