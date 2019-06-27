@@ -1,0 +1,3 @@
+# [Components | LPS-WEM] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46424
+
+project = LPS AND component in (subcomponents(LPS, WCM, "true")) AND component not in ("WCM > Personalization", Segmentation, "WCM > SEO")

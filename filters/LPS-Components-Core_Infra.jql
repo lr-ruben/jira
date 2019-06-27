@@ -1,0 +1,3 @@
+# [Components | LPS-Core Infra] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46444
+
+project = LPS AND component in (subcomponents(LPS, "Fault Tolerance", "true"), subcomponents(LPS, Performance, "true"), subcomponents(LPS, Testing, "true"), subcomponents(LPS, "Core Infrastructure", "true"), subcomponents(LPS, Environments, "true"), subcomponents(LPS, "Portal Services", "true"), subcomponents(LPS, "Dev Tools", "true"), subcomponents(LPS, "Fault Tolerance", "true"), subcomponents(LPS, Performance, "true"), subcomponents(LPS, Testing, "true"))
