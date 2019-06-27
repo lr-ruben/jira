@@ -1,0 +1,15 @@
+# Configure Board - Liferay Issues https://issues.liferay.com/secure/RapidView.jspa?rapidView=4096&tab=filter
+
+status not in (Closed, "Community Resolved") 
+OR (
+    issuetype not in (Bug, "Regression Bug") 
+    AND status in (Closed, "Community Resolved") AND updated >= -2d 
+) 
+OR ( 
+    issuetype in (Bug, "Regression Bug") 
+    AND status in (Closed, "Community Resolved") 
+    AND ( 
+        resolutiondate >= -1d 
+        OR status changed to Closed by (austin.chiang, nikki.prudencio, patricia.perez,beck.liu) AFTER startOfDay(-1) 
+        ) 
+    )
