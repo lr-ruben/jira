@@ -1,0 +1,7 @@
+# [CDM | Kanban | Delivered] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46137
+
+filter = 45900 
+AND issuetype not in (Epic, "Technical Documentation", "Technical Task", Testing) 
+AND (labels != no_predic OR labels is EMPTY) 
+AND resolution not in (Duplicate, Discarded, Inactive, "Won't fix", "No Longer Reproducible") 
+AND resolutiondate > 2019-05-01 ORDER BY resolutiondate
