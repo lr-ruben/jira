@@ -1,0 +1,5 @@
+# [LIMA | Kanban | CFD] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46220
+
+filter = 45900 
+AND issuetype not in (Epic, "Technical Task") AND status changed to ("Selected for Development", "In Progress", "In Development") after "2019/05/01" 
+AND status not in (Verified)

@@ -1,0 +1,9 @@
+# [ENG | Metrics | Escaped defects | 7.2] Issue Navigator - https://issues.liferay.com/issues/?filter=46467
+
+(issuetype = Bug OR issuetype = "Regression Bug") 
+AND (component is EMPTY OR component != "Security Vulnerability") 
+AND "Fix Priority" is not EMPTY 
+AND created >= 2019-06-01
+AND affectedVersion >= "7.2.0 M1"  
+AND issueFunction in linkedIssuesOf("project = LPP") 
+ORDER BY key ASC
