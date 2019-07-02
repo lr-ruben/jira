@@ -1,6 +1,6 @@
-[CDM | Kanban | In the system] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46469
+# [LIMA | Kanban | Lazy status] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46468
 
-filter = 45900 
-AND issuetype not in (Epic, "Technical Documentation", "Technical Task", Testing) 
-AND (labels != no_predic OR labels is EMPTY) 
-AND status not in (Closed, Open, Verified, Backlog)
+filter=45900 
+AND issuetype != Epic 
+AND status not in (Open, Verified, Closed, "Ready for Development", Backlog) 
+AND status changed BEFORE -20d

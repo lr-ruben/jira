@@ -1,0 +1,7 @@
+# [Exp.Mgmt | Backlog 7.3] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46389
+
+filter = 46327 
+AND issuetype in (Epic, Story, Task, Spike) 
+AND (status != closed OR status changed to closed after "2019/06/01" 
+AND resolution not in (Discarded, Inactive, Duplicate)) 
+AND (labels is EMPTY OR labels != Consider_For_7.4)
