@@ -1,0 +1,19 @@
+# Tango issues that are blocked by another team
+filter=46442 
+AND status != Closed 
+AND "Epic Link" = LPS-87072  
+AND issueFunction in hasLinks("depends on") 
+AND issueFunction in linkedIssuesOf("status != Closed")
+
+# Issues where Tango is the blocker
+filter=46442 
+AND status != Closed 
+AND "Epic Link" = LPS-87072  
+AND issueFunction in hasLinks("is a dependency of") 
+AND issueFunction in linkedIssuesOf("status != Closed")
+
+# LRAC tickets that are blocking a Tango issue
+project = LRAC
+AND status != Closed 
+AND issueFunction in hasLinks("is a dependency of") 
+AND issueFunction in linkedIssuesOf("status != Closed")
