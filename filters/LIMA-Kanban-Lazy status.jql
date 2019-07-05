@@ -1,6 +1,8 @@
 # [LIMA | Kanban | Lazy status] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46468
 
-filter=45900 
+filter = 45900 
 AND issuetype != Epic 
 AND status not in (Open, Verified, Closed, "Ready for Development", Backlog) 
-AND status changed BEFORE -20d
+AND status not in ("Selected for Development", "Ready for Development") 
+AND (labels != no_predic OR labels is EMPTY) 
+AND filter != "Helper | Status changed"
