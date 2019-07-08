@@ -16,4 +16,4 @@ AND issueFunction in linkedIssuesOf("status != Closed")
 project = LRAC
 AND status != Closed 
 AND issueFunction in hasLinks("is a dependency of") 
-AND issueFunction in linkedIssuesOf("status != Closed")
+AND issueFunction in linkedIssuesOf("'Epic Link' = LPS-87072 AND status != Closed")
