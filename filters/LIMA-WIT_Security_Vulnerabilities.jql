@@ -1,0 +1,3 @@
+# [COLL | WIT-Security Vulnerabilities] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=45779
+
+filter = 45638 AND component = "Security Vulnerability" AND "Fix Priority" in (5, 4)
