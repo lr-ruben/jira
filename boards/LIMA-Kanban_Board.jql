@@ -1,8 +1,14 @@
 # [CDM | Kanban Board] Issue Navigator - https://issues.liferay.com/issues/?filter=45900
 
-(filter = 45638 AND issuetype in (Epic, Story, Task, Spike, "Technical Documentation", "Technical Task", Testing) 
-AND assignee in membersOf(liferay-staff) 
-OR filter = "COLL | WIT-Security Vulnerabilities" 
-OR filter = 46336 OR labels = cdm-kanban-in) 
-AND (labels not in (cdm-kanban-out) OR labels is EMPTY) 
+(
+    filter = 45638 
+    AND issuetype in (Epic, Story, Task, Spike, "Technical Documentation", "Technical Task", Testing) 
+    AND assignee in membersOf(liferay-staff) 
+    OR filter = 45779 
+    OR filter = 46336 
+    OR labels = lima-kanban-in
+) 
+AND (
+    labels not in (lima-kanban-out) 
+    OR labels is EMPTY) 
 ORDER BY Rank ASC
