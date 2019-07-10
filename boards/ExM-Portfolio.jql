@@ -1,3 +1,3 @@
 # [ExM | Portfolio Kanban] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46329
 
-issue in structure(1027) AND issuetype in (Epic, Spike) ORDER BY Rank ASC
+issue in structure(1027) AND issuetype = Epic ORDER BY priority
