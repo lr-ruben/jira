@@ -1,0 +1,4 @@
+# [TANGO | Scrum Board] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46518
+
+filter = 46442
+AND (labels is EMPTY OR labels != Consider_For_7.4)

@@ -3,7 +3,8 @@
 status not in (Closed, "Community Resolved") 
 OR (
     issuetype not in (Bug, "Regression Bug") 
-    AND status in (Closed, "Community Resolved") AND updated >= -2d 
+    AND status in (Closed, "Community Resolved") 
+    AND updated >= -2d 
 ) 
 OR ( 
     issuetype in (Bug, "Regression Bug") 

@@ -1,0 +1,9 @@
+# [Segmentation & Personalization | Short Term Plan] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46038
+
+issue in structure(769) 
+AND (
+    status != closed 
+    OR status = closed 
+    AND resolutiondate >= startOfDay(-2)
+) 
+ORDER BY Rank ASC
