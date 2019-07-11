@@ -1,4 +1,4 @@
-# [LIMA | Kanban | Lazy status] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46468
+# [LIMA | Kanban | Inactive Issues] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46468
 
 filter = 45900 
 AND issuetype not in (Epic, "Technical Task") 
