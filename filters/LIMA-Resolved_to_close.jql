@@ -1,0 +1,6 @@
+# [LIMA | Resolved waiting to close] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46526
+
+filter = 45900 
+AND status = Resolved 
+AND status changed to Resolved before -10d  
+ORDER BY key ASC

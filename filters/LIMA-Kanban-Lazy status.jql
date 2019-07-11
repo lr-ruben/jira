@@ -6,3 +6,4 @@ AND status not in (Open, Verified, Closed, "Ready for Development", Backlog)
 AND status not in ("Selected for Development", "Ready for Development") 
 AND (labels != no_predic OR labels is EMPTY) 
 AND filter != "Helper | Status changed"
+ORDER BY key ASC
