@@ -1,0 +1,8 @@
+# Auto Backports to 7.2 - Structure - Liferay Issues https://issues.liferay.com/secure/StructureBoard.jspa?s=1030#
+
+project = LPS 
+AND issueFunction in linkedIssuesOf(
+    "project = BPR 
+    AND 'Backport Requested By' = brian.chan 
+    AND status in ('Awaiting Original Fix', 'Original Fix  Committed', 'Backport Needed', 'Auto Backport Approved', 'Auto Backport Discarded', 'Auto Backport Review')"
+)
