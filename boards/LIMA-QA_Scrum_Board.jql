@@ -1,0 +1,23 @@
+# ENG: QA - Portal - Collaboration - Agile Board - Liferay Issues https://issues.liferay.com/secure/RapidBoard.jspa?rapidView=1432
+
+project = "INTERNAL - Liferay QA" 
+AND issuetype != "Test Case Command" 
+AND component = Portal 
+AND component != CNQA 
+AND (
+    "Project component" = collaboration 
+    OR "Project Component/s" in ("Adaptive Media", Bookmarks, Collaboration, "Collaboration > Alerts", "Collaboration > Announcements", "Collaboration > API > Comments", "Collaboration > API > Notifications", "Collaboration > Blogs", "Collaboration > Comments", "Collaboration > Mentions", "Collaboration > Message Boards", "Collaboration > Message Boards > Subscription Manager", "Collaboration > Microblogs", "Collaboration > Upgrade", "Collaboration > Wiki", DM, "DM > Administration", "DM > API > Attachments", "DM > API > Repository", "DM > Connectors", "DM > Connectors > CMIS", "DM > Administration", "DM > Connectors > Sharepoint", "DM > Document Library Display", "DM > Media Gallery", "DM > Recently Downloaded", "DM > Upgrade", "DM > WebDAV", "Knowledge Base", "Social Networking", "Social Networking > Activities", "Social Networking > Bookmarking", "Social Networking > Directory", "Social Networking > Friend Requests", "Social Networking > Invitation", "Social Networking > Page Comments", "Social Networking > Page Flags", "Social Networking > Ratings", "Social Networking > Social Activity", "Social Networking > Social Coding Plugin", "Social Networking > Social Networking Plugin", "Social Networking", "Social Networking > Vimeo") 
+    AND assignee in (nikki.prudencio, austin.chiang, patricia.perez, support-qa, yvonne.han, beck.liu)
+) 
+OR (
+    project = LPS AND component in (subcomponents(LPS, DM, "true"), subcomponents(LPS, Collaboration, "true"), subcomponents(LPS, "Social Networking", "true"), subcomponents(LPS, Bookmarks, "true"), subcomponents(LPS, "Knowledge Base", "true"), subcomponents(LPS, Geolocation, "true"), subcomponents(LPS, "Adaptive Media", "true")) 
+    AND assignee in (nikki.prudencio, austin.chiang, patricia.perez, support-qa, yvonne.han, beck.liu) 
+    AND issuetype != "Feature Request"
+) 
+OR
+    project in (LPS, LRQA) AND status changed to Closed after startOfWeek(-2) 
+    AND resolution in (completed, fixed) 
+    AND component in (subcomponents(LPS, DM, "true"), subcomponents(LPS, Collaboration, "true"), subcomponents(LPS, "Social Networking", "true"), subcomponents(LPS, Bookmarks, "true"), subcomponents(LPS, "Knowledge Base", "true"), subcomponents(LPS, Geolocation, "true"), subcomponents(LPS, "Adaptive Media", "true")) 
+AND assignee in (nikki.prudencio, austin.chiang, patricia.perez, support-qa, yvonne.han, beck.liu) 
+AND labels = ee-ts 
+ORDER BY Rank ASC
