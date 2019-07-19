@@ -1,4 +1,6 @@
-type in (Bug, "Regression Bug", "Technical Support") 
+# [LIMA | Bugs | All FP] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46336
+
+∫type in (Bug, "Regression Bug", "Technical Support") 
 AND filter = "Components | LPS-CDM" 
 AND component != "Security Vulnerability" 
 AND status != Open 
