@@ -1,0 +1,6 @@
+
+filter = 46442 
+AND status = Closed 
+AND issuetype not in (Epic, "Technical Documentation", "Technical Task", Testing) 
+AND resolution not in (Duplicate, Discarded, Inactive, "Won't fix", "No Longer Reproducible") 
+AND resolutiondate > 2019-05-01 ORDER BY resolutiondate
