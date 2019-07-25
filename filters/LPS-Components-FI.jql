@@ -1,0 +1,4 @@
+# [Components | LPS-Frontend Infra] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46446
+
+project = LPS 
+AND component in (subcomponents(LPS, "Frontend Infrastructure", "true"), subcomponents(LPS, Themes, "true"), subcomponents(LPS, "Themes Infrastructure", "true"), subcomponents(LPS, "Welcome Theme & Content", "true"))

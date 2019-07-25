@@ -1,0 +1,4 @@
+# [Components | LPS-Forms] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46445
+
+project = LPS 
+AND component in (subcomponents(LPS, "Dynamic Data Lists", "true"), subcomponents(LPS, "Web Form", "true"), subcomponents(LPS, "Dynamic Data Mapping", "true"), subcomponents(LPS, Forms, "true"), subcomponents(LPS, Polls, "true"))

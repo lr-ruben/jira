@@ -1,0 +1,5 @@
+# [Components | LPS-Application Security] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46452
+
+project = LPS 
+AND component in (subcomponents(LPS, "Application Security", "True"), subcomponents(LPS, "Web Services", "true")) 
+OR project = OAuth2

@@ -1,0 +1,3 @@
+# [Components | LPS-Staging] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46449
+
+project = LPS AND component in subcomponents(LPS, Staging, "true")

@@ -1,0 +1,4 @@
+# [Components | LPS-USM] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46450
+
+project = LPS 
+AND component in (subcomponents(LPS, "User Management", "true"), subcomponents(LPS, "My Account", "true"), subcomponents(LPS, "Control Panel Framework", "true"), subcomponents(LPS, "Portal Configuration", "true"))

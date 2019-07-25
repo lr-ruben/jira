@@ -1,0 +1,4 @@
+# [Components | LPS-Workflow] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46451
+
+project = LPS 
+AND component in (subcomponents(LPS, Calendar, "true"), subcomponents(LPS, Workflow, "true"), subcomponents(LPS, "Business Productivity", "true"))

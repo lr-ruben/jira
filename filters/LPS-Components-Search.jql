@@ -1,0 +1,4 @@
+# [Components | LPS-Search] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46447
+
+project = LPS 
+AND component in (subcomponents(LPS, "Search Infrastructure", "true"), subcomponents(LPS, "Web Search", "true"))
