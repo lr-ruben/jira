@@ -1,4 +1,7 @@
 # [Components | LPS-Exp. Mgmt.] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46327
 
-project = LPS 
-AND component in (Bookmarks, subcomponents(LPS, Collaboration, "true"), subcomponents(LPS, DM, "true"), subcomponents(LPS, Geolocation, "true"), "Headless CMS", subcomponents(LPS, "Knowledge Base", "true"), "Markdown Converter", "My Subscriptions", subcomponents(LPS, "Social Networking", "true"), subcomponents(LPS, WCM, "true"), Segmentation, Personalization, "Page Templates", "Journey Builder")
+filter in (46424, 46442, 45638) 
+OR (
+    project = LPS 
+    AND component in ("Headless CMS", "Page Templates")
+)
