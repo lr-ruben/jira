@@ -1,9 +1,8 @@
 # 7.2 | ExM | Documentation in SP/FP - Structure - Liferay Issues https://issues.liferay.com/secure/StructureBoard.jspa?s=1054#
 
 # With LRDOCS
-issuekey in (LPS-97036, LPS-86252, LPS-90588, LPS-87232, LPS-87072, LPS-97646, LPS-82618, LPS-96645, LPS-97036) 
-AND issueFunction in linkedIssuesOf("project=LRDOCS") 
+issuekey in (LPS-86252, LPS-98826, LPS-98824, LPS-87072, LPS-85661, LPS-97646, LPS-82618, LPS-96645, LPS-97036) AND issueFunction in linkedIssuesOf("project=LRDOCS") 
 
 # Without LRDOCS
-issuekey in (LPS-97036, LPS-86252, LPS-90588, LPS-87232, LPS-87072, LPS-97646, LPS-82618, LPS-96645, LPS-97036) 
+issuekey in (LPS-86252, LPS-98826, LPS-98824, LPS-87072, LPS-85661, LPS-97646, LPS-82618, LPS-96645, LPS-97036) 
 AND NOT (issueFunction in linkedIssuesOf("project=LRDOCS"))
