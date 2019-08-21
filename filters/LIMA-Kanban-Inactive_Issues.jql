@@ -1,7 +1,7 @@
 # [LIMA | Kanban | Inactive Issues] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46468
 
-filter = 45900 
-AND issuetype not in (Epic, "Technical Task") 
+filter = 46980
+AND issuetype not in (Epic, "Technical Task", "Feature Request") 
 AND status not in (Open, Verified, Closed, "Ready for Development", Backlog) 
 AND status not in ("Selected for Development", "Ready for Development") 
 AND (labels != no_predic OR labels is EMPTY) 
