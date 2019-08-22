@@ -1,12 +1,14 @@
-# [Segmentation & Personalization | Verified bugs] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46009
+[TANGO | Verified Bugs] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47000
 
-project = LPS 
-AND type in (Bug, "Regression Bug", "Technical Support") 
-AND component in (subcomponents(LPS, Segmentation, "true"), subcomponents(LPS, "WCM > Personalization", "true")) 
+filter=46442 
+AND type in (Bug, "Regression Bug", "Technical Support")  
+AND "Fix Priority" is not EMPTY
 AND (
-    status in (Verified, Reopened, Escalated, "In Progress", "In Review", resolved) 
+    status != Open 
     OR status = closed AND resolved >= startOfDay(-30)
 ) 
-AND affectedVersion >= "7.1.0 M1" 
-AND (labels = EMPTY OR labels not in (ee-7.1.x-only)) 
+AND affectedVersion >= "7.2.0 M1" 
+AND (
+    labels is EMPTY 
+    OR labels not in (ee-7.1.x-only, ee-7.2.x-only)) 
 ORDER BY Rank ASC
