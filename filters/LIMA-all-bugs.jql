@@ -1,6 +1,6 @@
 # [LIMA | Bugs | All FP] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46336
 
-∫type in (Bug, "Regression Bug", "Technical Support") 
+type in (Bug, "Regression Bug", "Technical Support") 
 AND filter = 45638 
 AND component != "Security Vulnerability" 
 AND status != Open 
