@@ -1,6 +1,12 @@
 # [LIMA | Scrum Board] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46980
 
-filter = 45638 
+(filter = 45638 
 AND (labels is EMPTY OR labels != Consider_For_7.4) 
-AND issuetype in (Epic, Story, Task, Spike) 
+)
 OR filter = 45779
+OR filter = 46336
+OR (
+    project = RELEASE
+    AND (labels = lima-board)
+)
+ORDER BY Rank ASC
