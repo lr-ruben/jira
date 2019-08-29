@@ -8,8 +8,4 @@ AND (
     (status = "Ready for QA" 
      AND status changed to "Ready for QA" before -8d)
 ) 
-AND (
-     labels is EMPTY
-     OR labels != lima-opt-out
-)
 ORDER BY key ASC
