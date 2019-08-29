@@ -2,3 +2,4 @@
 
 filter = 46442
 AND (labels is EMPTY OR labels != Consider_For_7.4)
+ORDER BY Rank ASC

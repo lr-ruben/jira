@@ -1,6 +1,6 @@
-# [LIMA | Issues Delivered | 7.3] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46137
+# [TANGO | Issues delivered] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46815
 
-filter = 46980 
+filter = 46442
 AND issuetype != "Feature Request"
 AND status = Closed 
 AND resolution not in (Duplicate, Discarded, Inactive, "Won't fix", "No Longer Reproducible") 
