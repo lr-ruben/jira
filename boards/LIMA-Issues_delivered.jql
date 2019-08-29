@@ -1,0 +1,9 @@
+# [LIMA | Issues Delivered | 7.3] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46137
+
+filter = 45638 
+AND issuetype not in (Epic, "Technical Documentation", "Technical Task", Testing) 
+AND status = Closed 
+AND resolution not in (Duplicate, Discarded, Inactive, "Won't fix", "No Longer Reproducible") 
+AND resolutiondate >= 2019-06-01 
+AND issueFunction not in issuesInEpics("'Epic Name' ~ 'fi-'") 
+ORDER BY resolutiondate
