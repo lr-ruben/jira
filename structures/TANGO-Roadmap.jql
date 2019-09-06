@@ -1,0 +1,12 @@
+# TANGO | Roadmap | 7.3 & future - Structure - Liferay Issues https://issues.liferay.com/secure/StructureBoard.jspa?s=739#
+
+project = LPS 
+AND (
+    issuetype in (epic) 
+    OR (
+        issuetype in (story, task) 
+        AND "Epic Link" is EMPTY ) 
+        AND (
+            component in (subcomponents(LPS, "AB Testing", "true"),subcomponents(LPS, Personalization, "true"),subcomponents(LPS,Segmentation,"true")) or component = "WCM > personalization") and (status != closed or status changed to closed after "2018/06/01" and resolution not in (Discarded, Inactive, Duplicate)) and ("Epic/Theme" is EMPTY OR "Epic/Theme" not in (Content_Delivery)
+    )
+)
