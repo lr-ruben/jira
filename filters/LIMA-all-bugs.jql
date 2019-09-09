@@ -2,7 +2,6 @@
 
 type in (Bug, "Regression Bug", "Technical Support") 
 AND filter = 45638 
-AND component != "Security Vulnerability" 
 AND status != Open 
 AND "Fix Priority" is not EMPTY 
 AND affectedVersion >= "7.2.0 M1"  
