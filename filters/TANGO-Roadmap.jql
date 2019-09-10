@@ -1,0 +1,11 @@
+[TANGO | Roadmap] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47089
+
+filter = 46518
+AND issuetype in (Epic, Story, Task, Spike)
+AND (
+    status != Closed 
+    OR (
+        status changed to Closed after "2019/06/01" 
+        AND resolution not in (Discarded, Inactive, Duplicate)
+    )
+)
