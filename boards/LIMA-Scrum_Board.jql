@@ -10,4 +10,5 @@ OR (
     project = RELEASE
     AND (labels = lima-board)
 )
+OR "Epic Link" = LPS-101724 
 ORDER BY Rank ASC
