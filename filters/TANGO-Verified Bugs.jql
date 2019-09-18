@@ -3,10 +3,7 @@
 filter=46442 
 AND type in (Bug, "Regression Bug", "Technical Support")  
 AND "Fix Priority" is not EMPTY
-AND (
-    status != Open 
-    OR status = closed AND resolved >= startOfDay(-30)
-) 
+AND status != Open 
 AND affectedVersion >= "7.2.0 M1" 
 AND (
     labels is EMPTY 
