@@ -1,0 +1,5 @@
+# [TANGO | Bugs | FP5] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47187
+
+filter = 47000 
+AND "Fix Priority" = 5 
+AND status in (Verified, Reopened, "In Progress", "In Review")

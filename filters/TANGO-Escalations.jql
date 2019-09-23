@@ -1,0 +1,5 @@
+# [TANGO | Escalations] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47186
+
+filter=47000 
+AND status was in (Escalated) 
+AND status not in (Closed, Resolved)

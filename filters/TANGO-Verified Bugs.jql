@@ -1,4 +1,4 @@
-[TANGO | Verified Bugs] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47000
+# [TANGO | Verified Bugs] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47000
 
 filter=46442 
 AND type in (Bug, "Regression Bug", "Technical Support")  

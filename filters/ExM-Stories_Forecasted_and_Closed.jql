@@ -1,0 +1,7 @@
+# [ExM | Stories Forecasted&Closed] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47190
+
+issuetype = Story 
+AND labels in (fc_19_06, fc_19_07, fc_19_08, fc_19_09, fc_19_10, fc_19_11, fc_19_12) 
+AND status = Closed 
+AND resolution = Completed 
+ORDER BY resolutiondate

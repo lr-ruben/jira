@@ -1,0 +1,6 @@
+# [TANGO | LSV | SEV-3 | Not Closed] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47188
+
+filter=46442  
+AND component = "Security Vulnerability" 
+AND "Fix Priority" in (4) 
+AND status not in (Closed, Resolved)
