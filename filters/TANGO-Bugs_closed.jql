@@ -1,0 +1,11 @@
+# [TANGO | Bugs | Closed] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47193
+
+filter = 46442 
+AND type in (Bug, "Regression Bug", "Technical Support") 
+AND "Fix Priority" is not EMPTY 
+AND status = Closed 
+AND affectedVersion >= "7.2.0 M1" 
+AND (
+    labels is EMPTY 
+    OR labels not in (ee-7.1.x-only, ee-7.2.x-only)
+)
