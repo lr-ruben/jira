@@ -1,14 +1,14 @@
 # [LIMA | Scrum Board] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46980
 
-(filter = 45638 
-AND (labels is EMPTY OR labels not in (Consider_For_7.4, lima-opt-out)) 
-AND issuetype != "Feature Request"
-)
-OR filter = 45779
-OR filter = 46336
+filter = 45638 
+AND (
+    labels is EMPTY 
+    OR labels not in (Consider_For_7.4, lima-opt-out)
+) 
+AND issuetype != "Feature Request" 
+OR filter=46336 
 OR (
     project = RELEASE
     AND (labels = lima-board)
 )
-OR "Epic Link" = LPS-101724 
 ORDER BY Rank ASC
