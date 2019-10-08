@@ -1,0 +1,9 @@
+# [LPS Feature Requests] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46443
+
+project = LPS 
+AND issuetype = "Feature Request" 
+AND (
+    status != Closed 
+    OR status changed to Closed after startOfDay(-10) 
+) 
+ORDER BY Rank ASC
