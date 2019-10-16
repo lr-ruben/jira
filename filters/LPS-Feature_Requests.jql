@@ -2,8 +2,5 @@
 
 project = LPS 
 AND issuetype = "Feature Request" 
-AND (
-    status != Closed 
-    OR status changed to Closed after startOfDay(-10) 
-) 
+AND status != Closed 
 ORDER BY Rank ASC

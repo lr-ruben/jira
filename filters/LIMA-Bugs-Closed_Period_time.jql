@@ -1,0 +1,14 @@
+# [LIMA | Bugs | Closed during a period of time] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47279
+
+type in (Bug, "Regression Bug") 
+AND filter = 45638 
+AND "Fix Priority" is not EMPTY 
+AND affectedVersion >= "7.2.0 M1" 
+AND (
+    labels not in (lima-opt-out, 6.2.x-only, ee-7.0.x-only, ee-7.1.x-only, ee-ts, ee-7.2.x-only) 
+    OR labels is EMPTY 
+    OR labels = ee-ts) 
+AND (
+    status = Closed 
+    AND status changed to Closed during ("2019/06/01", "2019/09/30")
+)

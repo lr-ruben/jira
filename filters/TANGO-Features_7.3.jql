@@ -1,3 +1,5 @@
 # [TANGO | Features 7.3] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47252
 
-issuekey in (LPS-102737, LPS-101115, LPS-102532, LPS-98756, LPS-89959, LPS-85745, LPS-101119)
+# issue in structure(739) AND issuetype = Epic AND status = "In Development" ORDER BY key ASC
+
+issuekey in (LPS-89959, LPS-101119, LPS-102532, LPS-102737, LPS-102833, LPS-101115, LPS-103013)
