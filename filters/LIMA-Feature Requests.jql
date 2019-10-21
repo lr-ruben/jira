@@ -1,0 +1,8 @@
+# [Collaboration | Feature Requests] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=37525#
+
+project = LPS 
+AND issuetype in ("Feature Request") 
+AND component in (subcomponents(LPS, DM, "true"), subcomponents(LPS, Bookmarks, "true"), subcomponents(LPS, Collaboration, "true"), subcomponents(LPS, "Social Networking", "true"), subcomponents(LPS, "Knowledge Base", "true"), subcomponents(LPS, Geolocation, "true"))
+AND updated <= startOfDay() 
+AND updated >= startOfDay(-7) 
+ORDER BY key DESC
