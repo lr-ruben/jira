@@ -1,0 +1,16 @@
+# [Lima | Bugs Reported (Monthly)] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47297
+
+project = LPS 
+AND filter = "Components | LPS-Lima" 
+AND (issuetype = Bug OR issuetype = "Regression Bug") 
+AND affecedVersion >= "7.2.0 M1" 
+AND (
+    labels = EMPTY 
+    OR labels not in (ee-7.2.x-only) 
+    OR labels = ee-ts) 
+AND (
+    status changed to verified after startOfMonth(-1) before endOfMonth(-1) 
+    OR status changed to "In progress" from Open after startOfMonth(-1) before endOfMonth(-1)  
+    AND created >= startOfMonth(-1) 
+    AND created <= endOfMonth(-1)) 
+ORDER BY status DESC, created DESC

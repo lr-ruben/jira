@@ -1,0 +1,5 @@
+# [LIMA | PTRs Awaiting Response] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47310
+
+project = PTR 
+AND assignee = team-lima 
+AND status != Answered

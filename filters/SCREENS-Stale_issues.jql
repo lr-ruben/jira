@@ -1,0 +1,16 @@
+# [Stale Screens Requests] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=45893
+
+project = LPP 
+AND component in ("Liferay Screens", "Liferay Screens Compatibility") 
+AND status not in (Resolved, Completed, Closed) 
+AND (
+    updatedDate < startOfDay(-2d) 
+    OR issueFunction in lastComment("before -2d")
+) 
+OR project = PTR 
+AND status in ("Awaiting Response From Team", open) 
+AND component in (subcomponents(PTR, "Mobile Development", "true"), "Mobile User Experience") 
+AND (
+    updatedDate < startOfDay(-2d) 
+    OR issueFunction in lastComment("before -2d")
+)
