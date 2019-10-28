@@ -1,5 +1,7 @@
 # [LIMA | Escalations] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46795
 
-filter=46336 
-AND status was in (Escalated) 
-AND status not in (Closed, Resolved)
+filter = 46336 
+AND (
+    status not in (Closed, Resolved) 
+    AND (status was in (Escalated) OR labels = qa-escalated) 
+)
