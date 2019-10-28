@@ -3,8 +3,4 @@
 filter=45638
 AND issuetype in ("Feature Request") 
 AND status not in (Closed, "Selected for Development", "Does Not Fit Roadmap")
-AND (
-    updatedDate < startOfDay(-7d) 
-    OR issueFunction in lastComment("before -7d")
-) 
 ORDER BY key DESC
