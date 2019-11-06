@@ -1,0 +1,6 @@
+# [TANGO | Features Requests] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47334
+
+filter = 46442
+AND issuetype in ("Feature Request") 
+AND status not in (Closed, "Selected for Development", "Does Not Fit Roadmap")
+ORDER BY key DESC

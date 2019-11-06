@@ -1,0 +1,12 @@
+# [ExM | LIMA | Stories closed without fc] Issue Navigator - Liferay Issues https://issues.liferay.com/browse/LPS-94540?filter=47356
+
+filter=45638
+AND issuetype = Story 
+AND (
+    labels is EMPTY 
+    OR labels not in (lima-opt-out, fc_19_06, fc_19_07, fc_19_08, fc_19_09, fc_19_10, fc_19_11, fc_19_12)
+    ) 
+AND status = Closed 
+AND resolution = Completed 
+AND status changed to Closed after "2019/06/01" 
+ORDER BY resolutiondate
