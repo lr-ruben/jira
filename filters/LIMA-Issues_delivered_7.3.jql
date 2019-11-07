@@ -1,0 +1,10 @@
+# [LIMA | Issues Delivered | 7.3] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46137
+
+filter=45638 
+AND issuetype in (Story, Bug, "Regression Bug", Task) 
+AND status = Closed 
+AND resolution in (completed, fixed) 
+AND status changed to closed after "2019/06/01"  
+AND resolutiondate >= "2019/06/01" 
+AND (labels is EMPTY OR labels not in (lima-opt-out)) 
+ORDER BY resolutiondate ASC

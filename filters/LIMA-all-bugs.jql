@@ -1,7 +1,7 @@
 # [LIMA | Bugs | All FP] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46336
 
 type in (Bug, "Regression Bug") 
-AND filter = 45638 
+AND filter=45638 
 AND status != Open 
 AND affectedVersion >= "7.2.0 M1"  
 AND (

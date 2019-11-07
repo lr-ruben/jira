@@ -1,6 +1,10 @@
+# [TANGO | Issues delivered] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46815
 
-filter = 46442 
+filter=46442 
+AND issuetype in (Story, Bug, "Regression Bug", Task) 
 AND status = Closed 
-AND issuetype not in (Epic, "Technical Documentation", "Technical Task", Testing) 
-AND resolution not in (Duplicate, Discarded, Inactive, "Won't fix", "No Longer Reproducible") 
-AND resolutiondate > 2019-05-01 ORDER BY resolutiondate
+AND resolution in (completed, fixed) 
+AND status changed to closed after '2019/06/01' 
+AND resolutiondate >= "2019/06/01"
+AND (labels is EMPTY OR labels not in (tango-opt-out)) 
+ORDER BY resolutiondate ASC
