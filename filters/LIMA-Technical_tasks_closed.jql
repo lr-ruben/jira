@@ -1,0 +1,5 @@
+[LIMA | Technical Tasks closed -1w] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47481
+
+filter = 45638 
+AND issuetype = "Technical Task" 
+AND status changed to Closed after -1w 
