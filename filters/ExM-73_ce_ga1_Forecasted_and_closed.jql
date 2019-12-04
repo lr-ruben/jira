@@ -1,0 +1,9 @@
+# [ExM | 7.3-ce-ga1 | Stories Forecasted&Closed] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47580
+
+issuefunction in issuesInEpics(
+    "issuetype = epic 
+    AND labels = 7.3-ce-ga1 
+    AND labels in (fc_19_06, fc_19_07, fc_19_08, fc_19_09, fc_19_10, fc_19_11, fc_19_12, fc_20_01, fc_20_02, fc_20_03, fc_20_04, fc_20_05)") 
+AND status = closed 
+AND type = story 
+ORDER BY resolutiondate
