@@ -2,7 +2,7 @@
 
 filter=47703
 AND issuetype not in (Epic, "Technical Task", "Feature Request") 
-AND status not in (Open, Verified, Closed, "Ready for Development", Backlog) 
+AND status not in (Open, Verified, Closed, "Ready for Development", Backlog, Completed, Resolved) 
 AND status not in ("Selected for Development", "Ready for Development") 
 AND filter != "Helper | Status changed" 
 ORDER BY key ASC
