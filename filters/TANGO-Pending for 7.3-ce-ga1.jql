@@ -1,0 +1,6 @@
+# [TANGO | Pending for 7.3-ce-ga1] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47694
+
+issueFunction in issuesInEpics("labels in (7.3-ce-ga1, 7.3-dxp-m1) AND filter = 46442 AND type = Epic") 
+AND type = story 
+AND status != Closed 
+ORDER BY status DESC

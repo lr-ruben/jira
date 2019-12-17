@@ -1,0 +1,9 @@
+# [Headless | Issues Delivered] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47702
+
+filter=47703
+AND issuetype in (Story, Bug, "Regression Bug", Task) 
+AND status = Closed 
+AND resolution in (completed, fixed) 
+AND status changed to closed after startOfMonth(-7) 
+AND resolutiondate >= startOfMonth(-7) 
+ORDER BY resolutiondate ASC
