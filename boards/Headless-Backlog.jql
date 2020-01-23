@@ -3,5 +3,5 @@
 (filter = 47701 
 AND (labels is EMPTY OR labels not in (headless-opt-out)) 
 AND issuetype != "Feature Request") 
-OR (project = LPP AND component = "Liferay Screens") 
+OR (project = LPP AND component in ("Liferay Screens", "Push Notifications")) 
 ORDER BY Rank ASC
