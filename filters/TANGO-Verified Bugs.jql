@@ -1,7 +1,7 @@
 # [TANGO | Verified Bugs] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47000
 
 filter=46442 
-AND type in (Bug, "Regression Bug", "Technical Support")  
+AND type in (Bug, "Regression Bug")  
 AND "Fix Priority" is not EMPTY
 AND status != Open 
 AND affectedVersion >= "7.2.0 M1" 

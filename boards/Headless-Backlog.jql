@@ -1,4 +1,7 @@
 # [Headless | Backlog] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=47703
 
-(filter = 47701 AND (labels is EMPTY OR labels not in (headless-opt-out))) 
-OR (project = LPP AND component = "Liferay Screens")
+(filter = 47701 
+AND (labels is EMPTY OR labels not in (headless-opt-out)) 
+AND issuetype != "Feature Request") 
+OR (project = LPP AND component = "Liferay Screens") 
+ORDER BY Rank ASC
