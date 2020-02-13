@@ -1,0 +1,9 @@
+# [TANGO | 7.3-ce-gaX] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=48316
+
+issueFunction in issuesInEpics(
+    "labels in (7.3-ce-ga2, 7.3-dxp-m2) 
+    AND filter = 46442 
+    AND type = Epic") 
+AND type = story 
+AND key not in (LPS-101118) 
+ORDER BY status DESC
