@@ -1,3 +1,4 @@
 # [Components | LPS-CDM] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=45638
 
-project = LPS AND component in (Bookmarks, subcomponents(LPS, Collaboration, "true"), subcomponents(LPS, DM, "true"), subcomponents(LPS, Geolocation, "true"), subcomponents(LPS, "Knowledge Base", "true"), "Markdown Converter", "My Subscriptions", Sharing, subcomponents(LPS, "Social Networking", "true"), "WCM > SEO")
+project = LPS 
+AND component in componentsLeadByUser(team-lima)

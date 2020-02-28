@@ -1,3 +1,4 @@
 # [Components | LPS-Tango Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=46442
 
-project = LPS AND component in ("AB Testing", "Analytics > Content Performance", "Journey Builder", Segmentation, "WCM > Personalization")
+project = LPS 
+AND component in componentsLeadByUser(team-tango)
