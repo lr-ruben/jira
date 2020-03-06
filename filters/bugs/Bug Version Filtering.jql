@@ -1,0 +1,4 @@
+[Misc | Bug Version Filtering] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=48513
+
+(labels = EMPTY OR labels not in (ee-7.2.x-only)) 
+AND affectedVersion >= "7.2.0 M1"
