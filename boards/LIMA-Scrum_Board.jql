@@ -3,7 +3,7 @@
 filter = 45638 
 AND (
     labels is EMPTY 
-    OR labels not in (Consider_For_7.4, lima-opt-out)
+    OR labels not in (lima-opt-out)
 ) 
 AND issuetype != "Feature Request" 
 OR filter=46336 
