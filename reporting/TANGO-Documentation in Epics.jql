@@ -1,0 +1,23 @@
+# [TANGO | 7.3 | Epics with Documentation] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49301
+project = LPS
+AND component in componentsLeadByUser(team-tango)
+AND issueFunction in epicsOf(
+    "issuetype = Documentation")
+AND filter=49302
+
+
+# [TANGO | 7.3 | Documentation in Epics] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49299
+project = LPS
+AND component in componentsLeadByUser(team-tango)
+AND issueFunction in linkedIssuesOf(
+    "issuetype = Epic AND filter=49302", "is epic of"    
+)
+AND issuetype = Documentation
+
+
+# [TANGO | 7.3 | Epics without Documentation] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49300
+project = LPS
+AND component in componentsLeadByUser(team-tango)
+AND issueFunction not in epicsOf("filter=49299") 
+AND issuetype = Epic
+AND filter=49302

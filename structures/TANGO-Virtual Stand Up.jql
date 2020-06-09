@@ -1,0 +1,51 @@
+# TANGO | Virtual Stand Up - Structure - Liferay Issues https://issues.liferay.com/secure/StructureBoard.jspa?s=1372#
+
+# Achievements
+
+project = LPS
+AND component in componentsLeadByUser(team-tango)
+AND type in (story, spike) 
+AND (
+        status changed from ('In design', 'In design review') to ('Selected for Development','Ready for development', 'In development') AFTER startOfDay(-7) 
+        AND status != 'In Design' 
+    OR 
+        status changed from ('In Development', 'In Progress', 'In Review') to ('Awaiting PM Review', 'In PM Review','Ready for QA') AFTER startOfDay(-7) 
+        AND status not in ('In Development','In progress', 'In review') 
+    OR 
+        status changed to Closed After startofday(-7)
+) 
+AND (resolution is EMPTY or resolution not in (duplicate, inactive,discarded)) 
+AND (labels not in (tango-opt-out) or labels is empty) 
+ORDER BY 'Epic/theme' Desc, 'Epic Name' Desc, resolved Desc, status ASC, Rank ASC
+
+# Epics with internal status change (last week) 
+
+issueFunction in epicsOf(
+        "project = LPS
+        AND component in componentsLeadByUser(team-tango) 
+        AND type in (story, spike) 
+        AND (status changed from ('In design', 'In design review') to ('Selected for Development','Ready for development', 'In development') AFTER startOfDay(-7) 
+        AND status != 'In Design' or status changed from ('In Development', 'In Progress', 'In Review') to ('Awaiting PM Review', 'In PM Review','Ready for QA') AFTER startOfDay(-7) 
+        AND status not in ('In Development','In progress', 'In review') 
+    OR 
+        status changed to Closed After startofday(-7)) 
+        AND (resolution is EMPTY or resolution not in (duplicate, inactive,discarded)) 
+        AND (labels not in (tango-opt-out) OR labels is empty)"
+) 
+ORDER BY 'Epic/theme' Desc, 'Epic Name' Desc, resolved Desc, status ASC, Rank ASC
+
+# Epics in Active Sprint
+
+project = LPS
+AND component in componentsLeadByUser(team-tango)
+AND issueFunction in epicsOf('sprint in openSprints()')
+ORDER BY 'Epic/theme' Desc, 'Epic Name' Desc, resolved Desc, status ASC, Rank ASC
+
+# Working on current sprint
+
+project = LPS
+AND component in componentsLeadByUser(team-tango)
+AND issuetype not in (Epic, 'Technical Task')
+AND sprint in openSprints()
+AND status != Closed
+ORDER BY 'Epic Link' Desc, status ASC, Rank ASC	

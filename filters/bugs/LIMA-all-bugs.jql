@@ -3,9 +3,9 @@
 type in (Bug, "Regression Bug") 
 AND filter=45638 
 AND status != Open 
-AND affectedVersion >= "7.2.0 M1"  
+AND filter=48513 
 AND (
     labels not in (lima-opt-out, 6.2.x-only, ee-7.0.x-only, ee-7.1.x-only, ee-ts, ee-7.2.x-only) 
     OR labels is EMPTY 
     OR labels = ee-ts
-)
+)   
