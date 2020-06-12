@@ -1,0 +1,25 @@
+# [LIMA | 7.3 | Epics with Documentation] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49323
+project = LPS
+AND component in componentsLeadByUser(team-lima)
+AND issueFunction in epicsOf(
+    "issuetype = Documentation")
+AND filter=49302
+
+
+# [LIMA | 7.3 | Documentation in Epics] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49324
+project = LPS
+AND component in componentsLeadByUser(team-lima)
+AND issueFunction in linkedIssuesOf(
+    "issuetype = Epic AND filter=49302", "is epic of"    
+)
+AND issuetype = Documentation
+ORDER BY "Epic/Theme", "Epic Link"
+
+
+# [LIMA | 7.3 | Epics without Documentation] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49325
+project = LPS
+AND component in componentsLeadByUser(team-lima)
+AND issueFunction not in epicsOf("filter=49324") 
+AND issuetype = Epic
+AND filter=49302
+ORDER BY "Epic/Theme" ASC , Summary ASC
