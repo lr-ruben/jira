@@ -1,0 +1,12 @@
+# [TANGO | 7.3 CE GA5 | Planned Epics] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49485
+
+(project=LPS 
+AND issuetype in (Story, Task, Bug, "Regression Bug", Spike, Testing, Documentation) 
+AND issueFunction in linkedIssuesOf(
+    "issuetype = Epic AND project = LPS AND component in componentsLeadByUser(team-tango) AND labels in (7.3-ce-ga5, 7.3-dxp-m5)", "is epic of")) 
+OR (
+    project=LPS 
+    AND issuetype = Epic 
+    AND component in componentsLeadByUser(team-tango) 
+    AND labels in (7.3-ce-ga5, 7.3-dxp-m5)
+)
