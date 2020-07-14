@@ -1,0 +1,5 @@
+# [Tango-FI | Infopanel for 7.3] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49582
+
+project = LPS AND key in (LPS-110920) 
+OR project = LPS AND issueFunction in linkedIssuesOf("project=LPS AND key in (LPS-113907, LPS-110920)", "is epic of") 
+OR project = LPS AND issueFunction in subtasksOf("issueFunction in linkedIssuesOf('project=LPS AND key in (LPS-113907, LPS-110920)', 'is epic of')")
