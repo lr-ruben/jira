@@ -1,6 +1,7 @@
 # [Exp. Mgmt. | Echo & Tango 7.3 Documentation ] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49470
 
-filter in ("Components | LPS-Echo", "Components | LPS-Tango") 
-AND type in (Documentation, "Technical Documentation") 
-AND (created >= "2019/10/02" OR created < "2019/10/02" AND status != closed) 
+filter in ('Components | LPS-Echo', 'Components | LPS-Tango') 
+AND type in (Documentation, 'Technical Documentation') 
+AND (created >= '2019/10/02' OR created < '2019/10/02' AND status != closed) 
+AND (labels is EMPTY or labels != doc-opt-out)
 ORDER BY Rank ASC
