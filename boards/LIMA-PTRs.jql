@@ -1,0 +1,6 @@
+# [LIMA | PTRs] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49891
+
+project = "INTERNAL - Product Team Request" 
+AND (
+    component in componentsLeadByUser(team-lima) 
+    OR assignee in (team-lima, adolfo.perez, alejandro.tardin, alicia.garcia, ambrin.chaudhary, jorge.gonzalez, emiliano.cicero, pablo.agulla, ruben.heras, austin.chiang, yvonne.han, beck.liu, jeremy.chen, sme-collaboration, roberto.diaz))
