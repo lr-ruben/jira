@@ -1,0 +1,7 @@
+# [TANGO | PTRs] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49899
+
+project = "INTERNAL - Product Team Request" 
+AND (
+    component in componentsLeadByUser(team-tango) 
+    OR filter = 49898) 
+ORDER BY Rank ASC
