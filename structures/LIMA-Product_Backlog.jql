@@ -1,0 +1,24 @@
+# [LIMA | Epics Not Closed & Forecasted] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=50197
+issueFunction in issueFieldMatch(
+    "filter=45638 AND issuetype = Epic AND status != Closed", 
+    "labels", "(fc|d)_*") 
+
+
+# [LIMA | Epics Not Closed & Not Forecasted] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=50196
+issueFunction in issueFieldMatch(
+    "filter=45638 AND issuetype = Epic AND status != Closed", 
+    "labels", "^((?!(fc|d)_).)*$")
+
+
+# ISSUES in EPICS Not Closed & Forecasted
+issueFunction in linkedIssuesOf(
+    "filter=50197", 
+    "is epic of")
+ORDER BY Rank ASC
+
+
+# ISSUES in EPICS Not Closed & Not Forecasted
+issueFunction in linkedIssuesOf(
+    "filter=50196", 
+    "is epic of")
+ORDER BY Rank ASC

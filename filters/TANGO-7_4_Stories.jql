@@ -1,0 +1,7 @@
+# [TANGO | 7.4 | Stories] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=50049
+
+project = LPS 
+AND component in componentsLeadByUser(team-tango) 
+AND issuetype in (Story) 
+AND status was in ("In Development", "In Progress") AFTER ("2020-09-30") 
+AND (resolution is EMPTY OR resolution not in (Discarded, Duplicate))

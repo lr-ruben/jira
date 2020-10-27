@@ -1,0 +1,13 @@
+# Epics tagged as 7.4-ce-gaX and other stuff that might not be under an epic, but has been worked during the GA 
+ 
+project = LPS 
+AND issuetype in (Story, Task, Bug, "Regression Bug", Spike, Testing, Documentation) 
+AND (resolution is EMPTY OR resolution not in (Discarded, Duplicate)) 
+AND issueFunction in linkedIssuesOf(
+    "issuetype = Epic AND project = LPS AND component in componentsLeadByUser(team-lima) AND labels in (7.4-ce-ga1) AND (resolution is EMPTY OR resolution not in (Discarded, Duplicate))", "is epic of") 
+OR 
+project = LPS 
+AND component in componentsLeadByUser(team-lima) 
+AND "Epic Link" is EMPTY
+AND issuetype in (Story, Task, Bug, "Regression Bug", Spike, Testing, Documentation) 
+AND status was in ("In Development", "In Progress") DURING ('2020/09/30', now())

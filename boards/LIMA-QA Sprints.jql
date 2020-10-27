@@ -1,0 +1,8 @@
+# [LIMA | QA Sprints] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=49983
+
+project = LPS 
+AND component in componentsLeadByUser(team-lima) 
+AND (
+    issuetype in (Bug, "Regression Bug", Testing) 
+    OR (issuetype = story AND status in ("Ready for QA")) 
+)
