@@ -1,0 +1,24 @@
+# [LIMA | Short Term Forecasted] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=50287
+
+project=LPS AND component in componentsLeadByUser(team-lima)
+AND
+(
+    issueFunction in issueFieldMatch(
+        "filter=45638 
+        AND (labels is EMPTY OR labels not in (lima-opt-out)) 
+        AND issuetype in (Epic, Spike, Story, Task, Testing, Documentation)", 
+        "labels", "(fc|d)_*") 
+    OR
+        issuetype = Testing
+    OR
+        issuetype = "Technical Task"
+    OR
+        issuetype in (Bug, "Regression Bug")  
+        AND status != Open 
+        AND filter=48513 
+        AND (
+            labels not in (lima-opt-out, 6.2.x-only, ee-7.0.x-only, ee-7.1.x-only, ee-ts, ee-7.2.x-only, ee-7.3.x-only) 
+            OR labels is EMPTY 
+            OR labels = ee-ts)
+)
+ORDER BY Rank ASC
