@@ -11,7 +11,7 @@ AND
     OR
         issuetype = Testing
     OR
-        issuetype = "Technical Task"
+        issuetype IN ("Technical Task", "Technical Testing") 
     OR
         issuetype in (Bug, "Regression Bug")  
         AND status != Open 

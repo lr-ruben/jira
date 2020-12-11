@@ -1,0 +1,21 @@
+# [TANGO | 7.4 CE GA1 | Features Planned] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=50756
+
+project = LPS AND issuetype in (Story, Task, Bug, "Regression Bug", Spike, Testing, Documentation) AND issueFunction in linkedIssuesOf("issuetype = Epic AND project = LPS AND component in componentsLeadByUser(team-tango) AND labels in (7.4-ce-ga1, 7.4-dxp-m1)", "is epic of") 
+OR project = LPS AND component in componentsLeadByUser(team-tango) AND issuetype = Epic AND labels in (7.4-ce-ga1, 7.4-dxp-m1) 
+OR project = LPS AND component in componentsLeadByUser(team-tango) AND issuetype = Story AND labels in (7.4-ce-ga1, 7.4-dxp-m1) ORDER BY Rank ASC
+
+project = LPS 
+    AND issuetype in (Story, Task, Bug, "Regression Bug", Spike, Testing, Documentation) 
+    AND (resolution is EMPTY OR resolution not in (Discarded, Duplicate)) 
+    AND issueFunction in linkedIssuesOf(
+        "issuetype = Epic AND project = LPS AND component in componentsLeadByUser(team-tango) AND labels in (7.4-ce-ga1, 7.4-dxp-m1) AND (resolution is EMPTY OR resolution not in (Discarded, Duplicate))", "is epic of") 
+OR 
+    project = LPS 
+    AND component in componentsLeadByUser(team-tango) 
+    AND issuetype = Epic AND labels in (7.4-ce-ga1, 7.4-dxp-m1) 
+OR 
+    project = LPS 
+    AND component in componentsLeadByUser(team-tango) 
+    AND "Epic Link" is EMPTY
+    AND issuetype in (Story, Task, Bug, "Regression Bug", Spike, Testing, Documentation) 
+    AND status was in ("In Development", "In Progress") DURING ('2020/09/30', now())
