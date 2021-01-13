@@ -1,0 +1,7 @@
+# DE Migration - All tagged issues - Structure - Liferay Issues https://issues.liferay.com/secure/StructureBoard.jspa?p=107221310&s=1501#
+
+cf[10191] = Old_Form_Builder_Renderer_Replacement 
+OR labels in (7.4_form_builder_replacement_must_have, migration_to_dataengine) 
+OR issueFunction in linkedIssuesOf(
+    "cf[10191] = Old_Form_Builder_Renderer_Replacement AND issuetype = epic AND (resolution is EMPTY OR resolution not in (Discarded))", 
+    "is epic of") 
