@@ -5,5 +5,4 @@ AND issuetype in (Story, Bug, "Regression Bug", Task)
 AND status = Closed 
 AND resolution in (completed, fixed) 
 AND status changed to closed after "2019/06/01"  
-AND (labels is EMPTY OR labels not in (lima-opt-out)) 
-ORDER BY resolutiondate ASC
+AND (labels is EMPTY OR labels = lima-board-in OR labels not in (lima-board-out)) 

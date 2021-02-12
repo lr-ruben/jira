@@ -15,7 +15,7 @@ AND (
         status changed to Closed After startofday(-7)
 ) 
 AND (resolution is EMPTY or resolution not in (duplicate, inactive, discarded)) 
-AND (labels not in (lima-opt-out) or labels is empty) 
+AND (labels not in (lima-board-out) OR labels is empty OR labels in (lima-board-in)) 
 ORDER BY 'Epic/theme' Desc, 'Epic Name' Desc, resolved Desc, status ASC, Rank ASC
 
 
@@ -31,7 +31,7 @@ issueFunction in epicsOf(
     OR 
         status changed to Closed After startofday(-7)) 
         AND (resolution is EMPTY or resolution not in (duplicate, inactive,discarded)) 
-        AND (labels not in (lima-opt-out) OR labels is empty)"
+        AND (labels is empty OR labels not in (lima-board-out) OR labels in (lima-board-in))"
 ) 
 ORDER BY 'Epic/theme' Desc, 'Epic Name' Desc, resolved Desc, status ASC, Rank ASC
 

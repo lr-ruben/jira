@@ -8,7 +8,7 @@
     (
         issueFunction in issueFieldMatch(
             "filter=45638 
-            AND (labels is EMPTY OR labels not in (lima-opt-out)) 
+            AND (labels is EMPTY OR labels not in (lima-board-out)) 
             AND issuetype in (Epic, Spike, Story, Task, Testing, Documentation)", 
             "labels", "(fc|d)_*") 
         OR
@@ -20,14 +20,14 @@
             AND status != Open 
             AND filter=48513 
             AND (
-                labels not in (lima-opt-out, 6.2.x-only, ee-7.0.x-only, ee-7.1.x-only, ee-ts, ee-7.2.x-only, ee-7.3.x-only) 
+                labels not in (lima-board-out, 6.2.x-only, ee-7.0.x-only, ee-7.1.x-only, ee-ts, ee-7.2.x-only, ee-7.3.x-only) 
                 OR labels is EMPTY 
-                OR labels = ee-ts)
+                OR labels in (ee-ts, lima-board-in))
         )
 )
 OR (
     project = LPS
     AND issuetype in (Bug, "Regression Bug")
-    AND labels = lima-opt-in
+    AND labels in (lima-board-in)
 )
 ORDER BY Rank ASC

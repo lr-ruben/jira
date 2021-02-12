@@ -5,7 +5,7 @@ AND filter=45638
 AND status != Open 
 AND filter=48513 
 AND (
-    labels not in (lima-opt-out, 6.2.x-only, ee-7.0.x-only, ee-7.1.x-only, ee-ts, ee-7.2.x-only) 
+    labels not in (lima-board-out, 6.2.x-only, ee-7.0.x-only, ee-7.1.x-only, ee-ts, ee-7.2.x-only) 
     OR labels is EMPTY 
-    OR labels = ee-ts
+    OR labels in (ee-ts, lima-board-in)
 )   

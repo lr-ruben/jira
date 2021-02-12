@@ -1,0 +1,8 @@
+# [TANGO | LPP-LPS issues] Issue Navigator - Liferay Issues https://issues.liferay.com/issues/?filter=51174
+
+project = LPS AND component in componentsLeadByUser(team-tango) 
+AND (
+    issuefunction in linkedIssuesOf("project = LPP") 
+    OR labels = ee-ts 
+    OR creator in (membersOf(liferay-support))
+)
