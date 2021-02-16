@@ -5,3 +5,9 @@ OR labels in (7.4_form_builder_replacement_must_have, migration_to_dataengine)
 OR issueFunction in linkedIssuesOf(
     "cf[10191] = Old_Form_Builder_Renderer_Replacement AND issuetype = epic AND (resolution is EMPTY OR resolution not in (Discarded))", 
     "is epic of") 
+OR
+    project = LPS 
+    AND (component = "Data Engine" OR labels in (migration_to_dataengine)) 
+    AND type in (bug, "Regression Bug") 
+    AND status not in (closed) 
+    AND (Flagged != impediment OR flagged is EMPTY) 
