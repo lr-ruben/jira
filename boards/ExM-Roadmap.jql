@@ -8,4 +8,4 @@ AND (
 )
 AND (
     labels is EMPTY 
-    OR labels not in (Consider_For_7.4, lima-opt-out, tango-opt-out))
+    OR labels not in (Consider_For_7.4, lima-board-out, tango-opt-out))

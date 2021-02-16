@@ -27,7 +27,7 @@
 )
 OR (
     project = LPS
-    AND issuetype in (Bug, "Regression Bug")
+    AND issuetype in (Bug, "Regression Bug", Task)
     AND labels in (lima-board-in)
 )
 ORDER BY Rank ASC
